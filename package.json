@@ -1,42 +1,13 @@
 {
-  "name": "react-cool-starter",
+  "name": "shark-kontrol",
   "version": "2.2.9",
   "description":
-    "A starter boilerplate for an universal web application with the best development experience and best practices.",
+    "Kontrol de Shark mon.",
   "main": "index.js",
   "engines": {
     "node": ">=6.0",
     "npm": ">=3.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wellyshen/react-cool-starter"
-  },
-  "keywords": [
-    "starter",
-    "boilerpate",
-    "universal",
-    "react",
-    "redux",
-    "react router v4",
-    "express",
-    "webpack v3",
-    "es6",
-    "flow",
-    "code splitting",
-    "hot reloading",
-    "babel",
-    "postcss",
-    "jest",
-    "unit testing",
-    "performance optimizing"
-  ],
-  "author": "WellyShen <hivoid19@gmail.com> (https://github.com/wellyshen)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wellyshen/react-cool-starter/issues"
-  },
-  "homepage": "https://github.com/wellyshen/react-cool-starter",
   "scripts": {
     "start": "better-npm-run start",
     "start:production": "yarn build && yarn start:prod",
@@ -223,6 +194,7 @@
   "dependencies": {
     "axios": "0.17.1",
     "babel-register": "^6.26.0",
+    "coreui.io-react": "1.0.0-alpha.6",
     "chalk": "2.3.0",
     "compression": "1.7.1",
     "express": "4.16.2",
