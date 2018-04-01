@@ -1,8 +1,7 @@
 {
   "name": "shark-kontrol",
   "version": "2.2.9",
-  "description":
-    "Kontrol de Shark mon.",
+  "description": "Kontrol de Shark mon.",
   "main": "index.js",
   "engines": {
     "node": ">=6.0",
@@ -44,15 +43,13 @@
       }
     },
     "build": {
-      "command":
-        "webpack --progress --hide-modules --config ./tools/webpack/config.babel.js",
+      "command": "webpack --progress --hide-modules --config ./tools/webpack/config.babel.js",
       "env": {
         "NODE_ENV": "production"
       }
     },
     "build:stats": {
-      "command":
-        "webpack --progress --hide-modules --config ./tools/webpack/config.babel.js",
+      "command": "webpack --progress --hide-modules --config ./tools/webpack/config.babel.js",
       "env": {
         "NODE_ENV": "stats"
       }
@@ -97,17 +94,33 @@
       "stage-0",
       "flow"
     ],
-    "plugins": ["loadable-components/babel", "dynamic-import-node", "lodash"],
+    "plugins": [
+      "loadable-components/babel",
+      "dynamic-import-node",
+      "lodash"
+    ],
     "env": {
       "production": {
-        "plugins": ["transform-remove-console"]
+        "plugins": [
+          "transform-remove-console"
+        ]
       }
     }
   },
   "eslintConfig": {
     "parser": "babel-eslint",
-    "extends": ["plugin:lodash-fp/recommended", "airbnb", "prettier"],
-    "plugins": ["react", "jsx-a11y", "import", "lodash-fp", "prettier"],
+    "extends": [
+      "plugin:lodash-fp/recommended",
+      "airbnb",
+      "prettier"
+    ],
+    "plugins": [
+      "react",
+      "jsx-a11y",
+      "import",
+      "lodash-fp",
+      "prettier"
+    ],
     "env": {
       "browser": true,
       "node": true,
@@ -122,7 +135,10 @@
       "react/jsx-filename-extension": [
         1,
         {
-          "extensions": [".js", ".jsx"]
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
         }
       ],
       "import/no-extraneous-dependencies": [
@@ -134,7 +150,9 @@
       "jsx-a11y/anchor-is-valid": [
         "error",
         {
-          "specialLink": ["to"]
+          "specialLink": [
+            "to"
+          ]
         }
       ],
       "lodash-fp/use-fp": 0,
@@ -163,14 +181,25 @@
       "selector-pseudo-class-no-unknown": [
         true,
         {
-          "ignorePseudoClasses": ["global", "local"]
+          "ignorePseudoClasses": [
+            "global",
+            "local"
+          ]
         }
       ]
     }
   },
-  "browserslist": ["> 1%", "last 2 versions", "ie >= 11", "safari >= 7"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "ie >= 11",
+    "safari >= 7"
+  ],
   "jest": {
-    "setupFiles": ["raf/polyfill", "<rootDir>/tools/jest/setup.js"],
+    "setupFiles": [
+      "raf/polyfill",
+      "<rootDir>/tools/jest/setup.js"
+    ],
     "globals": {
       "__DEV__": true
     },
@@ -187,21 +216,22 @@
     ],
     "moduleNameMapper": {
       ".*\\.(css|scss|sass)$": "<rootDir>/tools/jest/styleMock.js",
-      ".*\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
-        "<rootDir>/tools/jest/assetMock.js"
+      ".*\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tools/jest/assetMock.js"
     }
   },
   "dependencies": {
+    "ajv": "^6.4.0",
     "axios": "0.17.1",
     "babel-register": "^6.26.0",
-    "coreui.io-react": "1.0.0-alpha.6",
     "chalk": "2.3.0",
     "compression": "1.7.1",
+    "coreui.io-react": "1.0.0-alpha.6",
     "express": "4.16.2",
     "helmet": "3.11.0",
     "history": "^4.7.2",
     "hpp": "^0.2.2",
     "html-minifier": "3.5.9",
+    "immutable": "^3.8.2",
     "loadable-components": "1.1.1",
     "lodash": "4.17.5",
     "morgan": "1.9.0",
@@ -215,11 +245,14 @@
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "5.0.0-alpha.8",
+    "react-saga": "^0.2.6",
     "redux": "^3.7.2",
+    "redux-saga": "^0.16.0",
     "redux-thunk": "^2.2.0",
     "serialize-javascript": "^1.4.0",
     "serve-favicon": "2.4.5",
-    "webpack-isomorphic-tools": "^3.0.5"
+    "webpack-isomorphic-tools": "^3.0.5",
+    "yarn": "^1.5.1"
   },
   "devDependencies": {
     "autoprefixer": "7.2.6",
